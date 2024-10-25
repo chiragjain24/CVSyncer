@@ -10,6 +10,7 @@ const __dirname = path.dirname(__filename);
 export default {
   content: ["*.{html,js,ejs}",
     path.join(__dirname, 'public', 'analyze.html'),
+    path.join(__dirname, 'public', 'index.html'),
     path.join(__dirname, 'public', 'scriptAnalyze.js'),
 
   ],

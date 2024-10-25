@@ -63,27 +63,27 @@ function displayAts(result) {
 
 
     let text22=`
-        <div class="shadow-xl bg-white rounded-lg px-10 py-5 text-lg"> <span class="font-bold text-black">ATS SCORE: </span> <span>${result.AtsScore}/100</span></div>
+        <div class="shadow-xl bg-white rounded-lg px-2 lg:px-10 py-5 text-lg"> <span class="font-bold text-black">ATS SCORE: </span> <span>${result.AtsScore}/100</span></div>
 
-        <div class="shadow-xl bg-white rounded-lg px-10 py-5 text-lg">
+        <div class="shadow-xl bg-white rounded-lg px-2 lg:px-10 py-5 text-lg">
             <p class="font-bold text-black">SUMMARY </p>
             <p> ${result.AtsSummary}</p> 
         </div>
 
-        <div class="shadow-xl bg-white rounded-lg px-10 py-5 text-lg">
+        <div class="shadow-xl bg-white rounded-lg px-2 lg:px-10 py-5 text-lg">
             <p class="font-bold text-black">RECOMMENDED ACTIONS </p>
-            <ol class="list-disc px-10">
+            <ol class="list-disc px-2 lg:px-10">
                 ${text33}
             </ol>
         </div>
 
-        <div class="rounded-lg px-10 py-5 flex flex-col gap-5">
+        <div class="rounded-lg px-2 lg:px-10 py-5 flex flex-col gap-5">
             <p  class="font-bold text-black text-3xl text-center mb-5">DETAILED SUGGESTIONS :</p>
             ${text11}
 
         </div>
 
-        <div class="shadow-xl bg-white rounded-lg px-10 py-5 text-lg">
+        <div class="shadow-xl bg-white rounded-lg px-2 lg:px-10 py-5 text-lg">
             <p class="font-bold text-black text-lg">STRENGTHS </p>
             <p>${result.Strengths}</p> 
         </div>
@@ -135,14 +135,14 @@ function displayCourses(result){
         <p class="text-xl font-bold ">Domain: <span class="text-lg font-normal"> &nbsp; ${result.domain}</span></p>
         <p class="text-xl font-bold">Current Skills: <span class="text-lg font-normal">&nbsp; ${string}</span></p>
 
-        <div class="flex gap-7">
+        <div class="flex gap-7 lg:flex-row flex-col">
             <p class="text-xl font-bold">Missing Skills:</p>
             <select class=" selectt border border-gray-300 rounded-md p-2 bg-white text-gray-700">
                 ${ttSkills}
             </select>
             <button id="scrapeCoursesBtn" class="rounded-lg bg-blue-600 text-white px-8 py-2 hover:bg-blue-800 text-lg">Get Courses</button>
         </div>
-        <div class="flex gap-5 items-center">
+        <div class="flex gap-5 items-center lg:flex-row flex-col">
             <label for="searchInp" class="text-xl font-bold">Any Other: </label>
             <input type="text" id="searchInp" placeholder="Type here" class="text-lg px-4 py-2 border-2">
             <button id="searchScrapeCoursesBtn" class="rounded-lg bg-blue-600 text-white px-8 py-2 hover:bg-blue-800 text-lg">Search</button>
