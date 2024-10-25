@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+
+# Vercel specific files
+.vercel/
+output/
+
+# Optional npm cache directory
+.npm/
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript
+*.tsbuildinfo
+
+# Mac system files
+.DS_Store
+
+# Visual Studio Code files
+.vscode/
+.vercel

@@ -1,0 +1,28 @@
+{
+  "name": "cvsyncer",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/main.js",
+    "tailwind": "npx tailwindcss -i ./public/input.css -o ./public/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "groq-sdk": "^0.6.1",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse-fixed":"git+https://github.com/ChiragJain01/pdf-parse-fixed.git"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
